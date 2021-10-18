@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1d179d4b-f008-431b-8c72-111f8372584f": {
+      "ProjectGuid": "1d179d4b-f008-431b-8c72-111f8372584f",
+      "DisplayName": "wadsrc",
+      "ColorIndex": 0
+    },
+    "1cfa980f-bbbf-4d40-a9bd-795f6fb407ae": {
+      "ProjectGuid": "1cfa980f-bbbf-4d40-a9bd-795f6fb407ae",
+      "DisplayName": "wadsrc_st",
+      "ColorIndex": 1
+    },
+    "9b465a9e-e5c7-4577-b559-3ca2f7ae7d96": {
+      "ProjectGuid": "9b465a9e-e5c7-4577-b559-3ca2f7ae7d96",
+      "DisplayName": "game-music-emu",
+      "ColorIndex": 2
+    },
+    "8049475b-5c87-46f9-9358-635218a4ef18": {
+      "ProjectGuid": "8049475b-5c87-46f9-9358-635218a4ef18",
+      "DisplayName": "Retroninjacyberassassin",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -1,0 +1,86 @@
+Actor PlayerPawn : Actor native
+{
+	Health 100
+	Radius 16
+	Height 56
+	Mass 100
+	Painchance 255
+	Speed 1
+	+SOLID
+	+SHOOTABLE
+	+DROPOFF
+	+PICKUP
+	+NOTDMATCH
+	+FRIENDLY
+	+SLIDESONWALLS
+	+CANPASS
+	+CANPUSHWALLS
+	+FLOORCLIP
+	+WINDTHRUST
+	+TELESTOMP
+	+NOBLOCKMONST
+	Player.AttackZOffset 8
+	Player.JumpXY 0
+	Player.JumpZ 8
+	Player.JumpDelay 7
+	Player.SecondJumpXY 0
+	Player.SecondJumpZ 8
+	Player.SecondJumpDelay 7
+	Player.SecondJumpAmount 0
+	Player.GruntSpeed 12
+	Player.FallingScreamSpeed 35,40
+	Player.ViewHeight 41
+	Player.UseRange 64
+	Player.ForwardMove 1,1,1,1
+	Player.SideMove 1,1,1,1
+	Player.FootstepsEnabled 1,1,1,1
+	Player.ColorRange 0,0
+	Player.SoundClass "player"
+	Player.DamageScreenColor "ff 00 00"
+	Player.MugShotMaxHealth 0
+	Player.FlechetteType "ArtiPoisonBag3"
+	Player.AirCapacity 1
+	Player.MaxSkinSizeFactor 3.44, 1.68 // [TP]
+	
+	Player.CrouchScale 0.5
+	Player.CrouchChangeSpeed 0.08
+	
+	Player.MvType 0 // movement type (0 == doom, 1 == quake, 2 == quake CPM)
+	
+	Player.FootstepInterval 12
+	Player.FootstepVolume 1.0
+	Player.WallClimbRegen 2.0
+	Player.WallClimbMaxTics 70
+	Player.WallClimbSpeed 5.0
+	Player.AirAcceleration 0.25
+	Player.VelocityCap 0
+	
+	// MvType 1 or 2 only
+	Player.GroundAcceleration 10.0
+	Player.GroundFriction 6.0
+	Player.SlideAcceleration 10.0
+	Player.SlideFriction 1.0
+	Player.SlideRegen 2.0
+	Player.SlideMaxTics 70
+	
+	// MvType 2 only
+	Player.CpmAirAcceleration 12
+	Player.CpmMaxForwardAngleRad 0.122173 // 7 degrees
+	
+	Obituary "$OB_MPDEFAULT"
+}
+
+Actor PlayerChunk : PlayerPawn native
+{
+	+NOSKIN
+	-SOLID
+	-SHOOTABLE
+	-PICKUP
+	-NOTDMATCH
+	-FRIENDLY
+	-SLIDESONWALLS
+	-CANPUSHWALLS
+	-FLOORCLIP
+	-WINDTHRUST
+	-TELESTOMP
+}
